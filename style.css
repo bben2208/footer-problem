@@ -1,0 +1,240 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  /* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  nav{
+    background-color: black;
+    color: #ffffff;
+    height: 3rem;
+   
+   
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    height: 100%;
+    border-left: 1px white;
+    border-right:  1px white;
+    /* width: 100%;
+   border: solid  1px white; */   
+  }
+  
+    a {
+        text-decoration: none;
+        color: white;
+      
+        
+      }
+  
+  
+  li{
+    list-style: none;
+   
+    
+   
+  }
+  
+  .icons ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Add spacing between items */
+   
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+
+
+#mainPage{
+   
+  
+    display: flex;
+}
+#leftContainer {
+    width: 100%;;
+    height: 500px;
+    display: flex;
+
+}
+#rightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-wrap: wrap;
+grid-area: 10px;
+gap: 10px;
+}
+
+.overlay-text {
+    position:static; /* Position relative to the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 5px 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the background */
+    text-align: left; /* Center the text */
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 10,10,10,25;
+  
+   
+}
+.banner-text h4{
+    font-size: 26px;
+     text-transform: uppercase; 
+     font-weight: bold;
+      margin-bottom: 5px;
+} 
+
+.banner-text p{
+    text-align: left;
+    width: 80%;
+}
+
+.picture-item {
+    position: relative; /* Enable absolute positioning for text */
+    width: 45%; /* Set width for each image container */
+    height: 200px; /* Set height for each image container */
+    overflow: hidden; /* Prevent text overflow */
+}
+
+/* Image styling */
+.picture-item img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Ensure the image fully fits */
+   
+}
+
+/* Overlay text styling */
+.picture-item p, .picture-item h5 {
+    position: absolute; /* Position relative to the image container */
+    left: 10px; /* Align text with some padding from the left */
+    color: white; /* Make text visible on images */
+   
+    padding: 5px; /* Add padding around text */
+    border-radius: 3px; /* Optional: rounded corners */
+}
+
+/* Positioning the text */
+.picture-item p {
+    bottom: 20px; /* Place paragraph above the bottom */
+    font-size: 14px; /* Set font size for paragraph */
+}
+
+.picture-item h5 {
+    bottom: -10px; /* Place heading slightly below the paragraph */
+    font-size: 12px; /* Set font size for heading */
+    font-weight: bold; /* Optional: make the text bold */
+}
+.dropbtn {
+    background-color:black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  #bottom-container{
+
+    padding-top: 2rem;
+    display: flex;
+    /* text-align: center; */
+   gap: 10px;
+}
+.small-sections img{
+     height: 200px;
+    width: auto;
+}
+
+.small-sections p{
+position: left;
+}
+
+.small-sections h6{
+    font-size: 15px;
+padding: 0;
+}
+ 
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
